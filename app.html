@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>420</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Bitacora De Efectos De Mi Droga</h1>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#entryModal">
+            Agregar Entrada
+        </button>
+
+        <!-- Modal para agregar entradas -->
+        <div class="modal fade" id="entryModal" tabindex="-1" role="dialog" aria-labelledby="entryModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="entryModalLabel">Nueva Entrada</h5>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="diaryForm">
+                            <label for="strain">Cepa:</label>
+                            <input type="text" id="strain" required>
+
+                            <label for="effect">Efectos:</label>
+                            <textarea id="effect" required></textarea>
+
+                            <label for="date">Fecha:</label>
+                            <input type="date" id="date" required>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" onclick="addEntry()">Agregar Entrada</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="entries" class="entry-container">
+            <!-- Las entradas del diario se mostrarán aquí -->
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-repeat: repeat; /* Otra opción es 'repeat-x' para repetir solo horizontalmente o 'repeat-y' para repetir solo verticalmente */
+    background-size: 50%; /* Ajustar el tamaño de la imagen de fondo para cubrir todo el cuerpo */
+    background-position: center; /* Centrar la imagen de fondo */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-top: 20px; /* Espaciado superior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, textarea, button {
+    margin-bottom: 16px;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.entry-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.entry {
+    background-color: rgba(20, 112, 32, 0.3);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 16px;
+}
+
+.entry p {
+    margin: 0;
+}
+
+.entry h3 {
+    margin-top: 0;
+}
+/* Agrega estilos para el modal de progreso */
+#progressModal .modal-dialog {
+    max-width: 200px;
+}
+
+#progressModal .progress {
+    margin-bottom: 0;
+}
+
+
+#progressBar {
+    height: 10px;
+    background-color: #00668c;
+    width: 0%;
+    display: none;
+    margin-top: 10px;
+}
+
+.entry {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.entry-actions {
+    margin-top: 5px;
+}
+
+.action-icon {
+    margin-right: 5px;
+    cursor: pointer;
+}
